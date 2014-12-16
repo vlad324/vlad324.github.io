@@ -1,6 +1,7 @@
 body {
     color: #ffffff;
-    background: url("../img/bg.jpg") fixed no-repeat center center;
+    /*background: url("../img/bg.jpg") fixed no-repeat center center;*/
+	background-color: black;
     font-family: 'Shadows Into Light', cursive;
 }
 
