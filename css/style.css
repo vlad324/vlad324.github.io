@@ -1,8 +1,13 @@
 body {
     color: #ffffff;
 	background: url("../img/bg.png") repeat;
-	/*background-color: black;*/
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', cursive, Georgia, serif;
+}
+
+h1 {
+	-moz-text-shadow:0 0 10px #ff0000;
+	-webkit-text-shadow:0 0 10px #ff0000;
+	text-shadow:0 0 10px #ff0000;
 }
 
 .col-md-3 {
