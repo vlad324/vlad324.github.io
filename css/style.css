@@ -1,13 +1,13 @@
 body {
     color: #ffffff;
-	background: url("../img/bg.png") repeat;
+    background: url("../img/bg.png") repeat;
     font-family: 'Shadows Into Light', cursive, Georgia, serif;
 }
 
 h1 {
-	-moz-text-shadow:0 0 10px #ff0000;
-	-webkit-text-shadow:0 0 10px #ff0000;
-	text-shadow:0 0 10px #ff0000;
+    -moz-text-shadow: 0 0 10px #ff0000;
+    -webkit-text-shadow: 0 0 10px #ff0000;
+    text-shadow: 0 0 10px #ff0000;
 }
 
 .col-md-3 {
@@ -16,4 +16,44 @@ h1 {
 
 .title {
     padding-right: 30px;
+}
+
+/* Shadow Radial */
+.shadow-radial {
+    display: inline-block;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.shadow-radial:before, .shadow-radial:after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 15px;
+    opacity: 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.shadow-radial:before {
+    bottom: 100%;
+    background: radial-gradient(ellipse at 50% 150%, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+}
+.shadow-radial:after {
+    top: 100%;
+    background: radial-gradient(ellipse at 50% -50%, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+}
+.shadow-radial:hover:before,
+.shadow-radial:focus:before,
+.shadow-radial:active:before,
+.shadow-radial:hover:after,
+.shadow-radial:focus:after,
+.shadow-radial:active:after {
+    opacity: 1;
 }
