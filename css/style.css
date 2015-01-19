@@ -26,6 +26,7 @@ h1 {
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .shadow-radial:before, .shadow-radial:after {
     pointer-events: none;
     position: absolute;
@@ -41,14 +42,17 @@ h1 {
     -webkit-transition-property: opacity;
     transition-property: opacity;
 }
+
 .shadow-radial:before {
     bottom: 100%;
     background: radial-gradient(ellipse at 50% 150%, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
 }
+
 .shadow-radial:after {
     top: 100%;
     background: radial-gradient(ellipse at 50% -50%, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
 }
+
 .shadow-radial:hover:before,
 .shadow-radial:focus:before,
 .shadow-radial:active:before,
