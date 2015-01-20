@@ -18,6 +18,14 @@ h1 {
     padding-right: 30px;
 }
 
+.links {
+    padding-top: 35px;
+}
+
+.footer {
+    padding-top: 8%;
+}
+
 /* Shadow Radial */
 .shadow-radial {
     display: inline-block;
