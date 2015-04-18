@@ -26,5 +26,6 @@ img {
 }
 
 img:hover {
-    transform: scale(0.95, 0.95);
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 0 20px #ff0000;
 }
