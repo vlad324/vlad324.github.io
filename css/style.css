@@ -14,3 +14,17 @@ h1 {
     padding-top: 7px;
     padding-bottom: 7px;
 }
+.row {
+    margin: auto;
+}
+
+img {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+}
+
+img:hover {
+    transform: scale(0.95, 0.95);
+}
