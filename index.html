@@ -1,64 +1,80 @@
-<!DOCTYPE HTML>
-
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uladzislau Radkevich personal web-site">
+    <meta name="author" content="Uladzislau Radkevich">
 
     <title>Uladzislau Radkevich</title>
 
-    <link rel="icon" type="image/png" href="img/icon.png"/>
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-<div class="container-full">
-    <div class="row visible-xs visible-sm">
-        <div class="col-md-12 text-center text-uppercase">
-            <h1 class="title">Uladzislau Radkevich</h1>
-
-            <h3 class="title">Software Engineer</h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-3 col-md-offset-1">
-            <a href="http://vk.com/vlad324" target="_blank">
-                <img class="img-responsive img-circle center-block" src="img/vk.png">
-            </a>
-        </div>
-        <div class="col-md-3 col-md-offset-4">
-            <a href="skype:vlad3249?add" target="_blank">
-                <img class="img-responsive img-circle center-block" src="img/skype.png">
-            </a>
-        </div>
-
-        </div>
-    </div>
-
-    <div class="row hidden-xs hidden-sm">
-        <div class="col-md-12 text-center text-uppercase col">
-            <h1 class="title">Uladzislau Radkevich</h1>
-
-            <h3 class="title">Software Engineer</h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-3 col-md-offset-1 col-centered">
-            <a href="skype:+375445742154?call" target="_blank">
-                <img class="img-responsive img-circle center-block" src="img/phone.png">
-            </a>
-        </div>
-        <div class="col-md-3 col-md-offset-4 col-centered">
-            <a href="mailto:Uladzislau%20Radkevich%20<vladradkevich@yandex.ru>" target="_blank">
-                <img class="img-responsive img-circle center-block" src="img/mail.png">
-            </a>
+<body class="intro">
+<div class="intro-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="brand-heading">Uladzislau Radkevich</h1>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://vk.com/vlad324" class="btn btn-default btn-lg">
+                            <i class="fa fa-vk fa-fw"></i>
+                            <span class="network-name">vlad324</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skype:vlad3249?add" class="btn btn-default btn-lg">
+                            <i class="fa fa-skype fa-fw"></i>
+                            <span class="network-name">vlad3249</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skype:+375445742154?call" class="btn btn-default btn-lg">
+                            <i class="fa fa-mobile fa-fw"></i>
+                            <span class="network-name">+375445742154</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:Uladzislau%20Radkevich%20<vladradkevich@yandex.ru>"
+                           class="btn btn-default btn-lg">
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                            <span class="network-name">vladradkevich@yandex.ru</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+<video id="my-video" class="video" muted loop>
+    <source src="media/night.mp4" type="video/mp4">
+    <source src="media/night.ogv" type="video/ogg">
+    <source src="media/night.webm" type="video/webm">
+</video>
 </body>
+<script>
+    (function () {
+        var video = document.getElementById("my-video");
+        video.addEventListener("canplay", function () {
+            video.play();
+        });
+    })();
+</script>
 </html>
